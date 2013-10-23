@@ -1,11 +1,15 @@
-rice-eaters-problem
+knapsack-problem
 ===================
 
-### Puzzle solver for a problem of "3 rice eaters"
+### Puzzle solver for a rucksack problem
 
 #### Problem definition
 
-Three tourists were cooking a rice. 
-`First` pured into a pot `400g` of rice, `second` – `200 grams`. `Third` of them had nothing with him, so he proposed, 
-that he will pay `6$` for a meal. Assuming, that after cooking the rice `all three tourists` divided the food evenly, 
-tell `how much money` should give two first tourists to the `third` one, to call it a *just transaction*.
+Mathematically the 0-1-knapsack problem can be formulated as:
+
+Let there be `n` items, `x_1` to `x_n` where `x_i` has a value `v_i` and weight `w_i`. 
+The maximum weight that we can carry in the bag is `W`. 
+It is common to assume that all values and weights are nonnegative. 
+To simplify the representation, we also assume that the items are listed in increasing order of weight.
+Maximize the sum of the values of the items in the knapsack 
+so that the sum of the weights must be less than the knapsack's capacity.
